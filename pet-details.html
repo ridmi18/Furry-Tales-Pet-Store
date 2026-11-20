@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Tales - Our Pets</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <button class="navbar-toggler" onclick="toggleMenu()">&#9776;</button>
+            <h1 class="logo">Furry Tales
+                <img src="img/logo.png" alt="Furry Tales Logo">
+            </h1>
+            <ul class="menu-items default-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pet-details.html">Pets</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="side-menu" id="sideMenu">
+        <button class="close-btn" onclick="toggleMenu()">&times;</button>
+        <ul class="menu-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pet-details.html">Pets</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    
+    <section id="pets">
+        <h2>Our Pets</h2>
+        <div class="filters">
+            <label for="pet-category">Select Category:</label>
+            <select id="pet-category">
+                <option value="all">All</option>
+                <option value="dogs">Dogs</option>
+                <option value="cats">Cats</option>
+                <option value="birds">Birds</option>
+                <option value="small-animals">Small Animals</option>
+            </select>
+
+            <label for="pet-age">Select Age:</label>
+            <select id="pet-age">
+                <option value="all">All</option>
+                <option value="puppy-kitten">Puppy/Kitten</option>
+                <option value="adult">Adult</option>
+            </select>
+        </div>
+
+        <div class="pets-container">
+            <div class="pet-item" data-category="dogs" data-age="adult">
+                <div class="img-container">
+                    <img src="pets/Bella.png" alt="Bella">
+                </div>
+                <div class="details">
+                    <p><b>Name :</b> Bella</p>
+                    <p><b>Breed :</b> Labrador Retriever</p>
+                    <p><b>Age :</b> 3 years</p>
+                    <p><b>Description :</b> Friendly and energetic. Loves to play fetch and is great with families and children.</p>
+                </div>
+            </div>
+            
+            <div class="pet-item" data-category="dogs" data-age="adult">
+                <div class="img-container">
+                    <img src="pets/Max.png" alt="Max">
+                </div>
+                <div class="details">
+                    <p><b>Name :</b> Max</p>
+                    <p><b>Breed :</b> German Shepherd</p>
+                    <p><b>Age :</b> 4 years</p>
+                    <p><b>Description :</b> Loyal and intelligent. Ideal for active families and requires regular exercise.</p>
+                </div>
+            </div>
+            
+            <div class="pet-item" data-category="cats" data-age="puppy-kitten">
+                <div class="img-container">
+                    <img src="pets/Luna.png" alt="Luna">
+                </div>
+                <div class="details">
+                    <p><b>Name :</b> Luna</p>
+                    <p><b>Breed :</b> Siamese</p>
+                    <p><b>Age :</b> 2 months</p>
+                    <p><b>Description :</b> Affectionate and talkative. Enjoys attention and is very social.</p>
+                </div>
+            </div>
+            
+            <div class="pet-item" data-category="cats" data-age="adult">
+                <div class="img-container">
+                    <img src="pets/Oliver.png" alt="Oliver">
+                </div>
+                <div class="details">
+                    <p><b>Name :</b> Oliver</p>
+                    <p><b>Breed :</b> Maine Coon</p>
+                    <p><b>Age :</b> 5 years</p>
+                    <p><b>Description :</b> Large and gentle. Known for its friendly nature and good with children and other pets.</p>
+                </div>
+            </div>
+            
+            <div class="pet-item" data-category="dogs" data-age="puppy-kitten">
+                <div class="img-container">
+                    <img src="pets/Charlie.png" alt="Charlie">
+                </div>
+                <div class="details">
+                    <p><b>Name :</b> Charlie</p>
+                    <p><b>Breed :</b> Beagle</p>
+                    <p><b>Age :</b> 1 year</p>
+                    <p><b>Description :</b> Curious and playful. Loves to explore and is very good-natured.</p>
+                </div>
+            </div>
+            
+            <div class="pet-item" data-category="dogs" data-age="adult">
+                <div class="img-container">
+                    <img src="pets/Maggie.png" alt="Maggie">
+                </div>
+                <div class="details">
+                    <p><b>Name :</b> Maggie</p>
+                    <p><b>Breed :</b> Golden Retriever</p>
+                    <p><b>Age :</b> 6 years</p>
+                    <p><b>Description :</b> Gentle and loving. Great with families, including children and other pets.</p>
+                </div>
+            </div>
+            
+            <div class="pet-item" data-category="birds" data-age="adult">
+                <div class="img-container">
+                    <img src="pets/Sunny.png" alt="Sunny">
+                </div>
+                <div class="details">
+                    <p><b>Name :</b> Sunny</p>
+                    <p><b>Breed :</b> Canary</p>
+                    <p><b>Age :</b> 2 years</p>
+                    <p><b>Description :</b> Bright and cheerful. Known for its singing and vibrant color.</p>
+                </div>
+            </div>
+            
+            <div class="pet-item" data-category="birds" data-age="adult">
+                <div class="img-container">
+                    <img src="pets/Echo.png" alt="Echo">
+                </div>
+                <div class="details">
+                    <p><b>Name :</b> Echo</p>
+                    <p><b>Breed :</b> Parrot</p>
+                    <p><b>Age :</b> 4 years</p>
+                    <p><b>Description :</b> Intelligent and colorful. Enjoys interaction and can mimic sounds and speech.</p>
+                </div>
+            </div>
+            
+            <div class="pet-item" data-category="small-animals" data-age="adult">
+                <div class="img-container">
+                    <img src="pets/Nibbles.png" alt="Nibbles">
+                </div>
+                <div class="details">
+                    <p><b>Name :</b> Nibbles</p>
+                    <p><b>Breed :</b> Hamster</p>
+                    <p><b>Age :</b> 1 year</p>
+                    <p><b>Description :</b> Small and active. Loves to run on a wheel and explore its habitat.</p>
+                </div>
+            </div>
+            
+            <div class="pet-item" data-category="small-animals" data-age="adult">
+                <div class="img-container">
+                    <img src="pets/Thumper.png" alt="Thumper">
+                </div>
+                <div class="details">
+                    <p><b>Name :</b> Thumper</p>
+                    <p><b>Breed :</b> Rabbit</p>
+                    <p><b>Age :</b> 2 years</p>
+                    <p><b>Description :</b> Gentle and friendly. Enjoys hopping around and interacting with its owner.</p>
+                </div>
+            </div>
+            
+            <div class="pet-item" data-category="small-animals" data-age="puppy-kitten">
+                <div class="img-container">
+                    <img src="pets/Peanut.png" alt="Peanut">
+                </div>
+                <div class="details">
+                    <p><b>Name :</b> Peanut</p>
+                    <p><b>Breed :</b> Gerbil</p>
+                    <p><b>Age :</b> 6 months</p>
+                    <p><b>Description :</b> Small and playful. Enjoys running and climbing in its enclosure.</p>
+                </div>
+            </div>
+            
+            <div class="pet-item" data-category="small-animals" data-age="adult">
+                <div class="img-container">
+                    <img src="pets/Squeaky.png" alt="Squeaky">
+                </div>
+                <div class="details">
+                    <p><b>Name :</b> Squeaky</p>
+                    <p><b>Breed :</b> Guinea Pig</p>
+                    <p><b>Age :</b> 3 years</p>
+                    <p><b>Description :</b> Social and gentle. Loves to interact and is easy to care for.</p>
+                </div>
+            </div>
+            
+            <div class="pet-item" data-category="birds" data-age="puppy-kitten">
+                <div class="img-container">
+                    <img src="pets/Kiwi.png" alt="Kiwi">
+                </div>
+                <div class="details">
+                    <p><b>Name :</b> Kiwi</p>
+                    <p><b>Breed :</b> Budgerigar</p>
+                    <p><b>Age :</b> 1 year</p>
+                    <p><b>Description :</b> Active and cheerful. Enjoys flying and is great for a lively home.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+
+    <footer id="footer">
+        <h2>Follow us on</h2>
+        <div class="footer-social-media">
+            <a href="https://facebook.com">
+                <img src="img/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://twitter.com">
+                <img src="img/twitter.png" alt="Twitter" />
+            </a>
+            <a href="https://instagram.com">
+                <img src="img/instagram.png" alt="Instagram" />
+            </a>
+        </div>
+        <p>&copy; 2024 Furry Tales. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

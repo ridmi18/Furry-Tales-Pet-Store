@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Tales</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <button class="navbar-toggler" onclick="toggleMenu()">&#9776;</button>
+            <h1 class="logo">Furry Tales
+                <img src="img/logo.png" alt="Furry Tales Logo">
+            </h1>
+            <ul class="menu-items default-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pet-details.html">Pets</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="side-menu" id="sideMenu">
+        <button class="close-btn" onclick="toggleMenu()">&times;</button>
+        <ul class="menu-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pet-details.html">Pets</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <section class="slideshow">
+        <div class="slides">
+            <div class="slide">
+                <img src="img/1.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="img/2.png" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="img/3.png" alt="Slide 3">
+            </div>
+        </div>
+        <div class="welcome">
+            <h1 class="main-title">Welcome to Furry Tales</h1>
+            <p>Your one-stop pet store for all your furry friends!</p>
+            <a href="pet-details.html" class="button">See Our Pets</a>
+        </div>
+    </section>
+    
+    </section>
+    
+    <footer id="footer">
+        <h2>Follow us on</h2>
+        <div class="footer-social-media">
+            <a href="https://facebook.com">
+                <img src="img/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://twitter.com">
+                <img src="img/twitter.png" alt="Twitter" />
+            </a>
+            <a href="https://instagram.com">
+                <img src="img/instagram.png" alt="Instagram" />
+            </a>
+        </div>
+        <p>&copy; 2024 Furry Tales. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
